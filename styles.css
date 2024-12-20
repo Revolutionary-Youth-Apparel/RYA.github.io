@@ -1,95 +1,164 @@
+/* Minimalist Blue, Orange, and Lavender-Purple Theme */
+
 body {
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9; /* Light background */
-    color: #3a38c6; /* Text color */
+    background-color: #f4f4f9;
+    color: #333;
     line-height: 1.6;
 }
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
+/* Header */
 header {
-    background: #222;
+    background-color: #1e3a8a; /* Deep Blue */
     color: #fff;
     padding: 1rem 0;
+    text-align: center;
 }
+
 header .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    text-transform: uppercase;
 }
-header .nav-links {
-    display: flex;
+
+.nav-links {
     list-style: none;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
     padding: 0;
     margin: 0;
 }
-header .nav-links a {
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
 }
+
+/* Hero Section */
 #hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: linear-gradient(to bottom right, #3b82f6, #a78bfa); /* Blue to Lavender-Purple */
+    color: #fff;
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
 }
+
 #hero h2 {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
+
 #hero .btn {
-    background: #ff9800;
+    background-color: #f97316; /* Orange */
     color: #fff;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
-    font-size: 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* About Section */
+#about {
+    background-color: #e0e7ff; /* Soft Lavender-Purple */
+    padding: 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    color: #1e3a8a;
+}
+
+/* Products Section */
+#products {
+    padding: 2rem;
+    text-align: center;
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
+
 .product-item {
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.product-item img {
-    max-width: 100%;
-    border-radius: 5px;
-}
+
 .product-item h3 {
     margin: 0.5rem 0;
+    color: #1e3a8a;
 }
+
 .product-item .btn {
-    background: #4CAF50;
+    background-color: #f97316;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
-    text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f4f4f9;
+    padding: 2rem;
+    text-align: center;
+}
+
+#testimonials blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    color: #6b7280; /* Grayish Text */
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #e0e7ff;
+}
+
+#contact label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    color: #1e3a8a;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
 footer {
-    background: #222;
+    background-color: #1e3a8a;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-}
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
 }
