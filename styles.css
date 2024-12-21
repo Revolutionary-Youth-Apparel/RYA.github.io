@@ -1,103 +1,32 @@
-:root {
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-blue: #007bff;
-  --color-orange: #ff6f00;
-  --color-purple: #6f42c1;
-  --font-family: 'Roboto', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Theme</title>
+  <link rel="stylesheet" href="minimalist.css">
+</head>
+<body>
+  <header>
+    <h1>Minimalist Theme</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <main>
+    <section class="card">
+      <h3>Our Mission</h3>
+      <p>Designing simple, elegant, and functional websites for all your digital needs.</p>
+      <button class="button">Learn More</button>
+    </section>
+  </main>
 
-body {
-  font-family: var(--font-family);
-  background-color: var(--color-black);
-  color: var(--color-white);
-  line-height: 1.6;
-}
-
-header {
-  background: linear-gradient(90deg, var(--color-blue), var(--color-purple));
-  color: var(--color-white);
-  padding: 1rem 2rem;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-nav {
-  margin-top: 1rem;
-}
-
-nav a {
-  color: var(--color-white);
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: var(--color-orange);
-}
-
-main {
-  padding: 2rem;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background: var(--color-orange);
-  color: var(--color-white);
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.button:hover {
-  background: var(--color-purple);
-}
-
-footer {
-  background: var(--color-blue);
-  color: var(--color-white);
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.card {
-  background: var(--color-white);
-  color: var(--color-black);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.card h3 {
-  color: var(--color-blue);
-}
-
-.card p {
-  color: var(--color-black);
-  font-size: 1rem;
-}
+  <footer>
+    <p>&copy; 2024 Minimalist Theme. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
