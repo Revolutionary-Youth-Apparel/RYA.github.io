@@ -1,32 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minimalist Theme</title>
-  <link rel="stylesheet" href="minimalist.css">
-</head>
-<body>
-  <header>
-    <h1>Minimalist Theme</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-blue: #007bff;
+  --color-orange: #ff6f00;
+  --color-purple: #6f42c1;
+  --font-family: 'Arial', sans-serif;
+}
 
-  <main>
-    <section class="card">
-      <h3>Our Mission</h3>
-      <p>Designing simple, elegant, and functional websites for all your digital needs.</p>
-      <button class="button">Learn More</button>
-    </section>
-  </main>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <footer>
-    <p>&copy; 2024 Minimalist Theme. All Rights Reserved.</p>
-  </footer>
-</body>
-</html>
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--color-black);
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--color-blue);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-orange);
+}
+
+main {
+  text-align: center;
+}
+
+.card {
+  border: 1px solid var(--color-black);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: var(--color-white);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: var(--color-purple);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-blue);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: var(--color-orange);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-black);
+  font-size: 0.9rem;
+  color: var(--color-black);
+}
