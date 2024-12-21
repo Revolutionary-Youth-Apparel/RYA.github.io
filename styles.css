@@ -1,100 +1,164 @@
-:root {
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-blue: #007bff;
-  --color-orange: #ff6f00;
-  --color-purple: #6f42c1;
-  --font-family: 'Arial', sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Minimalist Blue, Orange, and Lavender-Purple Theme */
 
 body {
-  font-family: var(--font-family);
-  background-color: var(--color-white);
-  color: var(--color-black);
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-  text-align: center;
-  margin-bottom: 2rem;
+    background-color: #1e3a8a; /* Deep Blue */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-header h1 {
-  font-size: 2rem;
-  color: var(--color-black);
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
-nav {
-  margin-top: 1rem;
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-nav a {
-  color: var(--color-blue);
-  text-decoration: none;
-  margin: 0 0.5rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
+.nav-links li {
+    margin: 0 1rem;
 }
 
-nav a:hover {
-  color: var(--color-orange);
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
 }
 
-main {
-  text-align: center;
+/* Hero Section */
+#hero {
+    background: linear-gradient(to bottom right, #3b82f6, #a78bfa); /* Blue to Lavender-Purple */
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.card {
-  border: 1px solid var(--color-black);
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 2rem 0;
-  background-color: var(--color-white);
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.card h3 {
-  font-size: 1.5rem;
-  color: var(--color-purple);
-  margin-bottom: 0.5rem;
+#hero .btn {
+    background-color: #f97316; /* Orange */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.card p {
-  font-size: 1rem;
-  color: var(--color-black);
-  margin-bottom: 1rem;
+/* About Section */
+#about {
+    background-color: #e0e7ff; /* Soft Lavender-Purple */
+    padding: 2rem;
+    text-align: center;
 }
 
-.button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background: var(--color-blue);
-  color: var(--color-white);
-  border: none;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
+#about h2 {
+    color: #1e3a8a;
 }
 
-.button:hover {
-  background: var(--color-orange);
+/* Products Section */
+#products {
+    padding: 2rem;
+    text-align: center;
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+    margin: 0.5rem 0;
+    color: #1e3a8a;
+}
+
+.product-item .btn {
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f4f4f9;
+    padding: 2rem;
+    text-align: center;
+}
+
+#testimonials blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    color: #6b7280; /* Grayish Text */
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #e0e7ff;
+}
+
+#contact label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    color: #1e3a8a;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
 footer {
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem 0;
-  border-top: 1px solid var(--color-black);
-  font-size: 0.9rem;
-  color: var(--color-black);
+    background-color: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
