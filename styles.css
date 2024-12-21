@@ -1,164 +1,111 @@
-/* Minimalist Blue, Orange, and Lavender-Purple Theme */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Website</title>
+  <style>
+    :root {
+      --color-black: #000000;
+      --color-white: #ffffff;
+      --color-blue: #007bff;
+      --color-orange: #ff6f00;
+      --color-purple: #6f42c1;
+      --font-family: 'Arial', sans-serif;
+    }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* Header */
-header {
-    background-color: #1e3a8a; /* Deep Blue */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-black);
+      color: var(--color-white);
+      line-height: 1.6;
+    }
 
-header .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
+    header {
+      background: linear-gradient(90deg, var(--color-blue), var(--color-purple));
+      color: var(--color-white);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
+    header h1 {
+      font-size: 2.5rem;
+    }
 
-.nav-links li {
-    margin: 0 1rem;
-}
+    nav {
+      margin-top: 1rem;
+    }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-}
+    nav a {
+      color: var(--color-white);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
 
-/* Hero Section */
-#hero {
-    background: linear-gradient(to bottom right, #3b82f6, #a78bfa); /* Blue to Lavender-Purple */
-    color: #fff;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+    nav a:hover {
+      color: var(--color-orange);
+    }
 
-#hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
+    main {
+      padding: 2rem;
+    }
 
-#hero .btn {
-    background-color: #f97316; /* Orange */
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .button {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: var(--color-orange);
+      color: var(--color-white);
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
 
-/* About Section */
-#about {
-    background-color: #e0e7ff; /* Soft Lavender-Purple */
-    padding: 2rem;
-    text-align: center;
-}
+    .button:hover {
+      background: var(--color-purple);
+    }
 
-#about h2 {
-    color: #1e3a8a;
-}
+    footer {
+      background: var(--color-blue);
+      color: var(--color-white);
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Modern Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-/* Products Section */
-#products {
-    padding: 2rem;
-    text-align: center;
-}
+  <main>
+    <h2>About Us</h2>
+    <p>We design modern, clean, and responsive websites tailored to your needs. Explore our services and let us help you stand out online.</p>
+    <button class="button">Learn More</button>
+  </main>
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.product-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.product-item h3 {
-    margin: 0.5rem 0;
-    color: #1e3a8a;
-}
-
-.product-item .btn {
-    background-color: #f97316;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Testimonials Section */
-#testimonials {
-    background-color: #f4f4f9;
-    padding: 2rem;
-    text-align: center;
-}
-
-#testimonials blockquote {
-    font-style: italic;
-    margin: 1rem 0;
-    color: #6b7280; /* Grayish Text */
-}
-
-/* Contact Section */
-#contact {
-    padding: 2rem;
-    text-align: center;
-    background-color: #e0e7ff;
-}
-
-#contact label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-    color: #1e3a8a;
-}
-
-#contact input, #contact textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#contact button {
-    background-color: #3b82f6;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Footer */
-footer {
-    background-color: #1e3a8a;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
+  <footer>
+    <p>&copy; 2024 Modern Website. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
